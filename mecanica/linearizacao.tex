@@ -1,0 +1,40 @@
+\section{Linearização}
+
+As simplificações mais usuais ocorrem nos sistemas que são dos seguintes tipos
+
+\begin{enumerate}
+	\item Energia Cinética é dada apenas pelo termo quadrático $T_2$, independe explicitamente do tempo
+	\item Sitema Conservativo, foras generalizadas são decorrentes de um potêncial
+	\item Vínculos são todos holônomos, portanto a config é dada pelas n coordenadas generalizadas
+\end{enumerate}
+
+A energia cinética de um sistema pode ser dividida em três termos
+
+$$ T(q, \dot{q}, t) = T_2 + T_1 + T_0 $$
+
+\begin{namedtheorem}[T_2]
+
+$$ T_2 = \frac{1}{2}\sum_{j=1}^n \sum_{r=1}^n [\sum_{i=1}^{3n} m_k(\frac{\partial x_i}{\partial q_j} \frac{\partial x_i}{\partial q_r})] \dot{q_j} \dot{q_r} $$
+
+Onde define-se
+
+$$ a_{jr} = \sum_{i=1}^{3N} m_k(\frac{\partial x_i}{\partial q_j} \frac{\partial x_i}{\partial q_r}) $$
+
+$$T_2 = \frac{1}{2}\sum_{j=1}^n \sum_{r=1}^n a_{jr}  $$
+
+\end{namedtheorem}
+
+\begin{namedtheorem}[T_1 Centrífugo]
+$$ T_1 = \sum_{j=1}^n a_j\dot{q_j} $$
+
+Onde
+
+$$ a_j = \sum_{i=1}^{3N} m_k (\frac{\partial x_i}{\partial q_j} \frac{\partial x_i}{\partial t}) $$
+
+\end{namedtheorem}
+
+\begin{namedtheorem}[T_0 Giroscópico]
+
+$$ T_0 = \frac{1}{2} \sum_{i=1}^{3N} m_k (\frac{\partial x_i}{\partial t})^2 $$
+
+\end{namedtheorem}

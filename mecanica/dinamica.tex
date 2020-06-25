@@ -1,0 +1,74 @@
+\section{Dinâmica}
+
+Conforme visto na seção passada, é possível utilizar os conceitos de \textit{Mecânica Analítica} para resolver problemas de \textbf{estática}, porém agora iremos introduzir o \textit{Princípio de D'Alembert} que permite a resolução de problemas de dinâmica com o mesmo ferramental.
+
+\subsection{Princípio de D'Alambert}
+
+Simplesmente definido como:\\
+
+Das Leis de newton temos que:
+$$ \vec{F} = m\vec{a}$$
+$$ \vec{F} - m\vec{a} = 0$$
+
+Define-se \textit{Força de Inércia} como $F_I = -m\vec{a}$ \\
+$$m\vec{a} = \vec{F_I}$$
+
+\textbf{Principio de D'Alambert}:
+
+\begin{equation}
+	\boxed{\vec{F} - F_I = 0}
+\end{equation}
+
+A \textit{Força de Inércia} não contribui no movimento da partícula, é chamada de uma força fictícia.
+
+\subsection{Princípio de D'Alambert em um sistema de pontos}
+
+Haverão três forças em jogo:
+
+\begin{enumerate}
+	\item Forças externas ao sistema, $\vec{F_{i}}$
+	\item Forças de interação entre as partículas, $\vec{f_{ij}}$
+	\item Forças de inércia de cada partícula, $F_{I_i}$
+\end{enumerate}
+
+Para uma partícula $i$ temos que:
+
+$$ \vec{F_i} + \vec{f_{ij}} + \vec{F_{I_i}} = \vec{0} $$
+
+Para um sistema de particular:
+
+$$ \sum_{i=0}^N\sum_{j=0}^N f_{ij} = 0$$
+
+E da definição do \textit{Princípio de D'Alambert}
+
+\begin{equation}
+\sum_{i=0}^N \vec{F_{i}} + \vec{f_{ij}} = 0
+\label{principio_d_alambert}
+\end{equation}
+
+
+Portanto enuncia-se o teorema como:\\
+\textit{Um sistema de partículas sempre possuirá equilibrio entre suas forças de inercia e as forças externas atuantes neste sistema.}
+
+\subsection{Principio de D'Alambert e o PTV}
+
+As forças externas serão divididas em $\vec{F_i}^a$ que são \textit{forças externas ativas} e $\vec{F_i}^v$ que são \textit{forças externas vinculares}.
+
+Teremos que na situação elucidade na equação \ref{principio_d_alambert}, podemos estabelecer uma situação de "Equilibrio" quando a somatória das forças reais e ficticias são 0, logo podemos utilizar o PTV, com a ideia do trabalho virtual.
+
+\begin{equation}
+		\delta \tau = \sum_{i=0}^N (\vec{F_i}^a + \vec{F_i}^v - m_1\ddot{\vec{r_i}})\delta \vec{r_i} = 0
+\end{equation}
+
+Por fim teremos que pelo fato do movimento respeitar as equações vinculares:
+
+\begin{equation}
+	\sum_{i=0}^N (\vec{F_i}^v = 0
+\end{equation}
+
+Logo a forma \textit{lagrangeana} para o \textit{princípio de D'Alambert} é:
+
+\begin{equation}
+		\delta \tau = \sum_{i=0}^N (\vec{F_i}^a - m_1\ddot{\vec{r_i}})\delta \vec{r_i} = 0
+\end{equation}
+

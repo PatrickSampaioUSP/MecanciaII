@@ -1,0 +1,55 @@
+\section{Equações Lagrange}
+
+Considerando deslocamentos compátiveis com os vínculos em um corpo rígido
+
+\subsection{Forças Generalizadas}
+
+O trabalho virtual sendo definido por:
+
+$\delta \tau = (F_1\frac{\partial x_1}{\partial q_1} + F_1\frac{\partial x_2}{\partial q_1} + F_3\frac{\partial x_3}{\partial q_1})\delta q_1 + (F_1\frac{\partial x_1}{\partial q_2} + F_1\frac{\partial x_2}{\partial q_2} + F_3\frac{\partial x_3}{\partial q_2})\delta q_2$
+
+Teremos as \textit{forças generalizadas} são definidas como:
+
+$$Q_1 \coloneqq (F_1\frac{\partial x_1}{\partial q_1} + F_1\frac{\partial x_2}{\partial q_1} + F_3\frac{\partial x_3}{\partial q_1})$$
+$$Q_2 \coloneqq (F_1\frac{\partial x_1}{\partial q_2} + F_1\frac{\partial x_2}{\partial q_2} + F_3\frac{\partial x_3}{\partial q_2})$$
+
+Conceitualmente, a força generaliza \textbf{não é uma força}, mas sim uma quantidade que multiplicada por um deslocamento em uma coordenada generalizada fornece o valor do trabalho que uma força ativa produziria naquela coordenada. Apesar de não serem uma força, possuem unidade de força para que multiplicada por um deslocamento forneça unidade de energia.
+
+\subsection{Equações de Lagrange}
+
+$$ \boxed{\frac{d}{dt}(\frac{\partial T}{\partial \dot{q_1}}) - \frac{\partial T}{\partial q_1} = Q_1}$$
+$$ \boxed{\frac{d}{dt}(\frac{\partial T}{\partial \dot{q_2}}) - \frac{\partial T}{\partial q_2} = Q_2}$$
+
+\subsection{Trabalho de Potencial conservativo}
+
+O trabalho realizado por uma força conservativa de uma configuração do sistema $P$ até à referência do sistema $P_0$ é definido como a energia potêncial.
+
+$$ V = \int_{P}^{P_0} \sum_{P}^{P_0} $$
+
+$$ V = - \int_{P_0}^{P} \sum_{P}^{P_0} $$
+
+$$ \boxed{\delta \tau = (-\frac{\partial V_1}{\partial x_1})\delta x_1 + (-\frac{\partial V_2}{\partial x_2})\delta x_2 + (-\frac{\partial V_3}{\partial x_3})\delta x_3}$$
+
+\subsection{Equações de Lagrange com função potencial}
+
+$$Q_j = \sum_{i=1}^{3N} (-\frac{\partial V}{\partial x_i}\frac{\partial x_i}{\partial q_j}) = -\frac{\partial V}{\partial q_j} $$
+
+$$ \frac{d}{dt}(\frac{\partial T}{\partial \dot{q_j}}) - \frac{\partial T}{\partial q_j} = Q_j $$
+
+$$ \frac{d}{dt}(\frac{\partial T}{\partial \dot{q_j}}) - \frac{\partial T}{\partial q_j} + \frac{\partial V}{\partial q_j} = 0 $$
+
+$$ \boxed{\frac{d}{dt}(\frac{\partial T}{\partial \dot{q_j}}) - \frac{\partial T - \partial V}{\partial q_j} = 0} $$
+
+\subsection{Força dissipativa}
+
+$$ R = \frac{1}{2} \sum_{i=1}^{3N} c_k\dot{x_i}^2, k=1, \dots N $$
+
+\subsection{Langrange mais geral}
+
+$$ \boxed{\frac{d}{dt}(\frac{\partial T}{\partial \dot{q_j}}) - \frac{\partial T - \partial V}{\partial q_j} + \frac{\partial R}{\partial \dot{q_j}} = Q_{NC}} $$
+
+
+
+
+
+
