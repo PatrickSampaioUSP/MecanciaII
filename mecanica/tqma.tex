@@ -1,0 +1,103 @@
+\section{Mecânica do corpo Rígido}
+
+\subsection{Energia Cinética}
+
+$$\boxed{T = \frac{1}{2}mv_g^2 + mv_g \cdot \Omega \wedge (G-O)  + \frac{1}{2} \begin{Bmatrix} \Omega \end{Bmatrix}^T \begin{vmatrix}  J_o\end{vmatrix} \begin{Bmatrix} \Omega \end{Bmatrix}}$$
+
+\subsection{Matriz de Inércia}
+
+\textbf{Propriedades:}
+
+\begin{itemize}
+	\item Quando diagonal, a matriz de inércia é dita relativa aos \textit{eixos principais de inércia}. Se o polo O coincindir com G, é dito \textit{eixos centrais de inércia}.
+	\item A matriz de Inércia sempre será simétrica
+	\item O traço da matriz é invariante em relação a mudança de Base
+	\item A matriz de inercia é \textit{definida positiva}, ou seja, seu determinante é maior que 0
+	\item 
+\end{itemize}
+
+\subsection{TQMA}
+
+Define-se O, como a origem do sistema cartesiano.
+A quantidade de movimento angular ou momento angular é definido como:
+
+\begin{namedtheorem}[Para uma partícular]
+$$K_{O'} = \sum_{i=1}^{N}(O-O')m_i\vec{v_i} + \sum_{i=1}^{N}\vec{r_i}\wedge m_i\vec{v_i} $$
+\end{namedtheorem}
+
+\begin{namedtheorem}[Definição de corpo rígido]
+De \textit{mecanica A}, sabemos que a definição de um corpo rígido é a de que:
+$$ \norm{P_i - P_j}^2 = cte, \forall P_i, P_j \in  S, i \neq j$$
+\end{namedtheorem}
+
+\begin{namedtheorem}[Definição de centro de massa]
+A definição de centro de massa para um sistema dotado de massa
+$$ \int_{S} \vec{r}dm = (G-O) $$
+\end{namedtheorem}
+
+Utilizando os conceitos acima, define-se a \textit{quantidade de momento angular} para um Corpo Rígido, com a premissa de que:
+
+\begin{enumerate}
+	\item O ponto \textbf{O'} pertence ao corpo rígido, ou à uma extensão hipotética sem massa dele
+	\item O ponto \textbf{O} é a origem do sistema referenciado
+\end{enumerate}
+
+\begin{namedtheorem}[Quantidade de momento angular - Corpo Rigido alternativa]
+$$K_{O'} = (O-O')m\wedge\vec{v_g} + m(G-O)\wedge\vec{v_O} + \begin{bmatrix}\vec{i} & \vec{j} & \vec{k} \\ \end{bmatrix}[J]_O\omega^T $$
+\end{namedtheorem}
+
+\begin{namedtheorem}[Fórmula de Mudança de Polo]
+$$K_{O'} = K_{O} + (O-O')m\vec{v_g} $$
+\end{namedtheorem}
+
+Como sabemos, geralmento o polo da \textit{quantidade de momento angular} é o CM ou algum ponto fixo, de sorte que $V_{O'} = 0$, portanto listaremos as simplificações mais usuais:
+
+\begin{enumerate}
+	\item (O' $\neq$ O e O = G); $H_{O'} = (G-O')\wedge mv_g + \begin{bmatrix}\vec{i} & \vec{j} & \vec{k} \\ \end{bmatrix}[J]_G\omega^T$
+	\item $(O'=O=G)$: $H_{O} = \begin{bmatrix}\vec{i} & \vec{j} & \vec{k} \\ \end{bmatrix}[J]_G\omega^T$
+\end{enumerate}
+
+\begin{namedtheorem}[Teorema da Quantidade de Movimento]
+Aqui utiliza-se o \textit{método de euler}, que consiste na definição de um sistema referencia-não inercial que é solidário ao corpo de estudo, de sorte que a distribuição ao longo dos eixos $[J]_O$ seja constante, isto viabiliza os cálculos referentes a este teorema.
+
+Dado a QTD de movimento angular de um corpo:
+
+$$K_{O'} = (O-O')m\wedge\vec{v_g} + m(G-O)\wedge \vec{v_O} + \begin{bmatrix}\vec{i} & \vec{j} & \vec{k} \\ \end{bmatrix}[J]_O\omega^T $$
+
+Diferenciando a equação acima em relação ao tempo teremos que:
+
+$$\dot{\vec{K_{O}}} = m(G-O)\wedge a_O + \frac{\begin{bmatrix}\vec{i} & \vec{j} & \vec{k} \\ \end{bmatrix}[J]_O\omega}{dt} $$
+
+Onde o polo O é um ponto pertencente ao corpo
+\end{namedtheorem}
+
+\begin{namedtheorem}[Mudança de Polo - TQMA]
+
+$$\vec{M_{O}} = \vec{M_{O'}} - (O - O')\wedge \vec{F}^e$$
+
+\end{namedtheorem}
+
+Simplificando o TQMA para um pto fixo ou ao baricentro do sistema
+
+\begin{namedtheorem}[TQMA simplificado]
+
+$$\dot{\vec{H_{G}}} = \vec{M_G}$$
+
+Conclui-se que se não há momento externo em relação ao baricentro do sistema, há conservação da \textit{quantidade de movimento angular}
+
+\end{namedtheorem}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

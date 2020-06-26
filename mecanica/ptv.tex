@@ -1,0 +1,69 @@
+\section{Mecanica Analítica introdução}
+
+Definiremos todos os conceitos utilizando o exemplo do pêndulo duplo abaixo.
+
+\subsection{Graus de Liberdade}
+
+Quantidade de coordenadas livres que descrevem o sistema por completo. \\Ou seja no exemplo acima, se sabemos o valor de $\theta_1$ e o valor ed $\theta_2$ sabemos a posição de todos os elementos do pêndulo.
+
+\subsection{Vínculo}
+
+Restrições ao movimento de um corpo.\\
+No caso do exemplo, temos dois vínculos, a \textbf{articulação da barra 1} ao teto e a \textbf{articulação da barra 2} que liga ela a barra 1.\\
+
+O vínculos possuem \textbf{equações vínculares}, que são a descrição algébrica da restrição imposta pelo messmo.
+
+No exemplo do pêndulo, caso adotemos as coordenadas do sistema como $(x_1, y_1, x_2, y_2)$, teremos que as equações vinculares seriam:
+
+$\begin{cases} (x_1 - a)^2 + (y_1 - b)^2 = L^2 \\ (x_2 - x_1)^2 + (y_2 - y_1)^2 = L^2 \end{cases}$
+
+No caso teriamos 4 coordenadas, porém 2 equações vinculares, resultando em 2 graus de liberdade.
+
+\begin{namedtheorem}[Vínculo Holônomo Reônomo]
+  Vínculos que possuem dependencia do tempo em suas equações.
+\end{namedtheorem}
+
+\begin{namedtheorem}[Vínculos Holônomo Esclerônomo]
+  Vínculos que não possuem dependência do tempo em suas equações.
+\end{namedtheorem}
+
+\begin{namedtheorem}[Vínculos Não Holônomo]
+  Vínculos que podem ser expressos apenas em equações diferenciais, cuja integração analítica é impossível.
+  Neste tipo de sisema são necessárias mais coordenadas para a descrição da \textit{configuração} do que o número de graus de liberdade, visto que eles não possibilitam eliminar variáveis como equações de \textit{vínculos holônomos}.
+\end{namedtheorem}
+
+\subsection{Configuração}
+
+No exemplo acima visualizamos que é possível descrever o mesmo sistema de diversas manerias, poderiamos \\\textbf{(1)} utilizar quatro coordendas $(x_1, y_1, x_2, y_2)$ \\\textbf{(2)} utilizar duas coordenadas $(\theta_1, \theta_2)$
+
+Lançamos mão do conceito de \textit{coordenadas generalizadas}, são as coordenadas independentes do sistema em um determinado sistema, ou seja $(\theta_1, \theta_2)$ seriam coordenadas generalizadas.
+
+E a \textit{configuração} do sistema é equivalente à posição dada pelas \textit{coordenadas generelizadas}, e o conjunto de coordenadas generalizadas define o \textit{espaço da configuração}.
+
+\begin{namedtheorem}[Válidade do espaço de configuração]
+Dado uma configuração tal que: \\
+$q_1, q_2, \cdots, q_n$ são as coordenadas generalizadas\\
+$m$ número de equações vinculares no espaço de coordenadas generalizadas\\
+$x_1, x_2, \cdots, x_j$ coordenadas no sistema cartesiano\\
+$l$ numero de equações vínculares no sistema cartesiano \\
+$f_1, f_2, \cdots, f_j$ funções de transformação de coordenadas generalizadas para o cartesiano\\
+
+Teremos que a configuração é representativa se:
+
+\begin{enumerate}
+	\item $GL = n - m = j - l$
+	\item $J = |\frac{\partial (f_1, f_2, \cdots, f_j)}{\partial (q_1, q_2, \cdots, q_n)}| \neq 0$
+\end{enumerate}
+
+\end{namedtheorem}
+
+
+
+
+
+
+
+
+
+
+
