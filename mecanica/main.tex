@@ -1,0 +1,72 @@
+\PassOptionsToPackage{inline}{enumitem}
+\documentclass[columns=3, numbered theorems=false]{mycheatsheet}
+
+\usepackage{svg}
+\usepackage{siunitx}
+\usepackage[normalem]{ulem}
+\usepackage{circuitikz}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{esvect}
+
+\usetikzlibrary{positioning}
+
+\setlist{itemjoin={\hspace{1em}}}
+
+\setlength{\parskip}{.5ex plus .5ex minus .2ex}
+
+\renewcommand{\boldsymbol}[1]{\symbfit{#1}}
+
+\AtBeginDocument{\let\div\divergence}
+
+\newcommand{\ur}{\ensuremath{\vu{u}_\mathrm{r}}}
+\newcommand{\uR}{\ensuremath{\vu{u}_R}}
+\newcommand{\up}{\ensuremath{\vu{u}_\rho}}
+\newcommand{\uphi}{\ensuremath{\vu{u}_\phi}}
+\newcommand{\ux}{\ensuremath{\vu{u}_\mathrm{x}}}
+\newcommand{\uy}{\ensuremath{\vu{u}_\mathrm{y}}}
+\newcommand{\uz}{\ensuremath{\vu{u}_\mathrm{z}}}
+\renewcommand{\r}{\ensuremath{\vu{r}}}
+
+\renewcommand{\u}{\ensuremath{\vb{u}}}
+\renewcommand{\E}{\ensuremath{\vb{E}}}
+\newcommand{\F}{\ensuremath{\vb{F}}}
+\newcommand{\B}{\ensuremath{\vb{B}}}
+\newcommand{\D}{\ensuremath{\vb{D}}}
+\renewcommand{\H}{\ensuremath{\vb{H}}}
+\newcommand{\J}{\ensuremath{\vb{J}}}
+\renewcommand{\P}{\ensuremath{\vb{P}}}
+\newcommand{\M}{\ensuremath{\vb{M}}}
+\newcommand{\A}{\ensuremath{\vb{A}}}
+
+\newcommand{\vdl}{\ensuremath{\dd{\vb{\ell}}}}
+\newcommand{\dl}{\ensuremath{\dd{\ell}}}
+\newcommand{\dS}{\ensuremath{\dd{S}}}
+\newcommand{\vdS}{\ensuremath{\dd{\vb{S}}}}
+\newcommand{\dtau}{\ensuremath{\dd{\tau}}}
+
+\renewcommand{\pv}{\ensuremath{\rho_\mathrm{v}}}
+\newcommand{\ps}{\ensuremath{\rho_\mathrm{s}}}
+\newcommand{\pl}{\ensuremath{\rho_\mathrm{\ell}}}
+
+\newcommand{\we}{\ensuremath{w_{\mathrm{e}}}}
+\newcommand{\We}{\ensuremath{W_{\mathrm{e}}}}
+
+\newcommand{\vbar}[1]{\uline{\smash{#1}}}
+
+\begin{document}
+  \title{Plano JK de Mecânica II}
+  \author{Patrick Sampaio\normalsize\\patrick.sampaio@usp.br} % chktex 21
+  \maketitle
+  \input{tqma}
+  \input{equacoes_euler}  
+  \input{balanceamento}
+  \input{impulso}
+  \input{choque}
+  \input{ptv}
+  \input{principio_trabalho_virtual}
+  \input{dinamica}
+  \input{equacoes_lagrange}
+  \input{linearizacao}
+  
+\end{document}
