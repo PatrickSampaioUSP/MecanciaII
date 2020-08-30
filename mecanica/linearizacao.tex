@@ -38,3 +38,65 @@ $$ a_j = \sum_{i=1}^{3N} m_k (\frac{\partial x_i}{\partial q_j} \frac{\partial x
 $$ T_0 = \frac{1}{2} \sum_{i=1}^{3N} m_k (\frac{\partial x_i}{\partial t})^2 $$
 
 \end{namedtheorem}
+
+A linearização é a aproximação por taylor dos termos em torno de um ponto de equilibrio. Através disto é possível obter equações lineares que vão aproximar o comportamento do sistema em deslocamentos pequenos em relação à este ponto.
+
+$$ \boxed{M_q \ddot{q} + D\dot{u} + K u \approx 0} $$
+
+\begin{namedtheorem}[Matriz da energia cinética]
+
+$$ \boxed{M(q) = [\frac{\partial^2 T}{\partial \dot{q}^2}] = [\frac{\partial^2 T}{\partial \dot{q_i} \partial \dot{q_j}}]} $$
+
+Propriedades:
+
+\begin{itemize}
+	\item Matriz simétrica por construção
+	\item Matriz de massa
+	\item Deve obdecer critérios de ponto de mínimo de uma matriz de derivadas parciais(Matriz hessiana)
+	$$ det K > 0 $$
+	\item Existem casos em que esta matriz pode ser positiva semi-definida, exigindo tratamento especial
+\end{itemize}
+
+\end{namedtheorem}
+
+\begin{namedtheorem}[Matriz da energia potencial]
+
+$$ \boxed{K = [\frac{\partial^2 V}{\partial q^2}] = [\frac{\partial^2 V}{\partial q_i \partial q_j}]} $$
+
+Propriedades:
+
+\begin{itemize}
+	\item Matriz simétrica por construção
+	\item Matriz de rigidez
+	\item Deve obdecer critérios de ponto de mínimo de uma matriz de derivadas parciais(Matriz hessiana)
+	$$ det K > 0 $$
+\end{itemize}
+
+\end{namedtheorem}
+
+\begin{namedtheorem}[Matriz de amortecimento]
+
+$$ \boxed{D = [\frac{\partial^2 R}{\partial q^2}] = [\frac{\partial^2 R}{\partial q_i \partial q_j}]} $$
+
+Propriedades:
+
+\begin{itemize}
+	\item Matriz simétrica por construção
+	\item Matriz de Amortecimento
+	\item Deve obdecer critérios de ponto de mínimo de uma matriz de derivadas parciais(Matriz hessiana)
+	$$ det K > 0 $$
+\end{itemize}
+
+\end{namedtheorem}
+
+\begin{namedtheorem}[Condições de Equilibrio]
+
+$$ \boxed{\frac{\partial V}{\partial q_i} = 0} $$
+
+\begin{enumerate}
+	\item Se a matriz hessiana da energia potencial for positiva definida, o ponto será de equilibrio estável
+	\item Se a matriz hessiana for positiva semi-definida, o ponto será de cela
+	\item Se a matriz hessiana for negativa, o equilibrio será instavel no ponto de estudo
+\end{enumerate}
+
+\end{namedtheorem}
